@@ -1,8 +1,8 @@
 /* Global Layout Set-up */
-* { 
+* {
   box-sizing: border-box;
 }
-  
+
 body {
   margin: 0;
   padding: 0;
@@ -11,54 +11,46 @@ body {
   color: #222;
   background: #f7f5f0;
 }
-/* Link Styles */
 
-a {
-  text-decoration: none;
-  color: #e5a75b;
-}
-a:hover {
-  color: #867f7a;
+img{
+	max-width: 100%
 }
 
-/* Section Styles */
+/* Navigation */
 
 .main-nav {
   width: 100%;
-  background: #835c38;
+  background: rgba(54, 58, 34, .7);
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  text-align: center;
+  top: 0;
 }
 .nav {
   display: flex;
-  justify-content: space-around;
-  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
   list-style-type: none;
   margin: 0 auto;
   padding: 0;
 }
 
-.nav .name {
-    display: inline-block;
-    margin-right: auto;
-    color: #e3bd8e;
-}
 .nav li {
-  padding: 5px 10px 10px 10px;
+  padding: 5px 10px 10px;
   display: inline-block;
 }
+
 .nav a {
   transition: all .5s;
+  text-decoration: none;
+  color: #fff;
 }
 .nav a:hover {
-  color: #e3bd8e;
+  color: #e3e6cd;
 }
 
-img{
-	max-width: 100%
-}
+
 
 header {
   text-align: center;
@@ -66,33 +58,36 @@ header {
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
-}
-header {
   line-height: 1.5;
 }
-header .profile-image {
-  margin-top: 50px;
+
+.profile-image {
+  margin: 50px 0 20px;
   width: 120px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid #363a22;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 1px solid #363a22;
   transition: all .5s;
 }
-header .profile-image:hover {
+
+.profile-image:hover {
   transform: scale(1.2) rotate(5deg);
 }
+
 .tag {
   background-color: #f3f3f3 ;
   color: #363a22;
   padding: 10px;
-  border-radius: 5px;
-  display: table;
-  margin: 10px auto;
-} 
-.location {
+  border-radius: 3px;
+  width: 50%;
+  margin: 0px auto;
+}
+.call-out {
   background-color: #363a22;
   color: #f3f3f3;
 }
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -131,7 +126,7 @@ ul.skills {
 	list-style:none;
 }
 #gallery li{
-	float: left; 
+	float: left;
 	width: 45%;
 	margin:2.5%;
 }
@@ -191,10 +186,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
-  
+
   .flex {
       display: -ms-flexbox;      /* TWEENER - IE 10 */
-      display: flex; 
+      display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -226,4 +221,3 @@ a.social:hover {
   }
 
 }
-
