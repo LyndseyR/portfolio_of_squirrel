@@ -21,11 +21,12 @@ img{
 
 .main-nav {
   width: 100%;
-  background: rgba(54, 58, 34, .7);
+  background: rgba(54, 58, 34, 1);
   min-height: 30px;
   padding: 10px;
   position: fixed;
   top: 0;
+  z-index: 100;
 }
 .nav {
   display: flex;
@@ -51,19 +52,16 @@ img{
   color: #e3e6cd;
 }
 
-
-
-header {
-  text-align: center;
+.hero {
   background: url('images/forest-bkgrd.jpg') no-repeat top center ;
   background-size: cover;
-  overflow: hidden;
-  padding-top: 60px;
-  line-height: 1.5;
+  height: 500px;
+  margin-top: 50px;
 }
 
+
 .profile-image {
-  margin: 50px 0 20px;
+  margin: 30px 0px 20px;
   width: 120px;
   height: 150px;
   object-fit: cover;
@@ -121,25 +119,38 @@ header {
   background: #835c38;
 }
 
+.card-header {
+  max-width: 80%;
+  text-align: center;
+  margin: 15px auto;
+}
+
+main {
+  margin-top: 50px;
+}
+
 #gallery {
 	margin: 0;
 	padding: 0;
 	list-style:none;
+  z-index: 0;
 }
 #gallery li{
 	float: left;
 	width: 45%;
 	margin:2.5%;
 }
-#gallery li p{
+.description{
 	margin: 0;
-	padding: 5%;
-	text-align: left;
 	font-size:0.9em;
 	color: #363a22;
 }
 #gallery li img{
-  border: 3px solid #363a22;
+  border: 1px solid #363a22;
+  transition: all 1s;
+}
+#gallery li img:hover {
+  transform: rotate(5deg);
 }
 
 footer {
@@ -203,10 +214,6 @@ a.social:hover {
       margin: 0 auto;
   }
 
-  header {
-    min-height: 470px;
-  }
-
   .nav {
     max-width: 1200px;
     padding: 0 30px;
@@ -242,12 +249,19 @@ a.social:hover {
 
 }*/
 
-@media screen and (max-width: 719px) {
+@media screen and (max-width: 899px) {
   .card {
     max-width: 70%;
     margin: 15px auto;
   }
   .call-out {
     margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 450px){
+  .card {
+    max-width: 90%;
+    margin: 15px auto;
   }
 }
