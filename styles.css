@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  line-height: 1.6;
   font-family: 'Roboto', sans-serif;
   color: #222;
   background: #f7f5f0;
@@ -89,11 +90,12 @@ header {
 }
 
 .card {
-  margin: 30px;
+  margin: 30px 10px;
   padding: 20px 40px 40px;
-  max-width: 500px;
+  max-width: 400px;
   text-align: left;
   background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 4px solid #ccc;
   border-radius: 6px;
   transition: all .5s;
@@ -102,12 +104,11 @@ header {
   border-color: #363a22;
 }
 
-ul.skills {
+.card ul {
   padding: 0;
-  text-align: center;
 }
 
-.skills li {
+.card ul li {
   border-radius: 6px;
   display: inline-block;
   background: #363a22;
@@ -116,7 +117,7 @@ ul.skills {
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
+.card ul li:nth-child(odd) {
   background: #835c38;
 }
 
@@ -144,7 +145,8 @@ ul.skills {
 footer {
   width: 100%;
   min-height: 30px;
-  padding: 20px 0 40px 20px;
+  margin: 0;
+  padding: 20px 20px;
   clear: both;
 }
 
@@ -184,11 +186,16 @@ a.social:hover {
   clear: both;
 }
 
-/* Styles for larger screens */
-@media screen and (min-width: 720px) {
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-  .flex {
-      display: -ms-flexbox;      /* TWEENER - IE 10 */
+/* Styles for larger screens */
+@media (min-width:900px) {
+  section {
+      display: -ms-flexbox;
       display: flex;
       max-width: 1200px;
       -ms-flex-pack: distribute;
@@ -217,7 +224,30 @@ a.social:hover {
   footer {
     font-size: 1.3em;
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0px auto;
+  }
+}
+
+/*@media screen and (min-width: 720px) {
+  .card {
+    max-width: 40%;
+    margin: 15px auto;
+    float: left;
+  }
+  .card:nth-of-type(2){
+    border: 1px solid blue;
+    width: 60%;
+    float: left;
   }
 
+}*/
+
+@media screen and (max-width: 719px) {
+  .card {
+    max-width: 70%;
+    margin: 15px auto;
+  }
+  .call-out {
+    margin-bottom: 15px;
+  }
 }
