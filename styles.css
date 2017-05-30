@@ -153,12 +153,28 @@ main {
   transform: rotate(5deg);
 }
 
+#view-full {
+  background: #835c38;
+  height: 50px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  transition: background .5s;
+}
+#view-full:hover {
+  background: #363a22
+}
+
 footer {
   width: 100%;
   min-height: 30px;
   margin: 0;
   padding: 20px 20px;
-  clear: both;
 }
 
 footer .copyright {
