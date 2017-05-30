@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <title>Life of a Squirrel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="styles.css">
+  <script src="js/modernizr.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
 
   <body>
@@ -51,7 +52,12 @@
       </div>
 
     </section>
-     <div id="view-full">Show Full Site</div>
+
+    <!-- "View Full Site" Button -->
+    <div class="rwd-display-options">
+        <span id="view-full" class="rwd-display-option">View Full Site</span>
+    </div>
+
     <footer>
       <ul>
         <li><a href="https://github.com/LyndseyR" class="social github">Github</a></li>
