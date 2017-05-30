@@ -1,3 +1,7 @@
+$('#view-full').click(function(){
+  console.log('Clicked Test');
+});
+
 $(document).ready(function(){
 
   // viewport stuff
