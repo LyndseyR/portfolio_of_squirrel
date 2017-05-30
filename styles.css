@@ -153,7 +153,8 @@ main {
   transform: rotate(5deg);
 }
 
-#view-full {
+/* CSS for View Full Site */
+#view-full, #view-responsive {
   background: #835c38;
   height: 50px;
   width: 200px;
@@ -166,9 +167,13 @@ main {
   color: #fff;
   transition: background .5s;
 }
-#view-full:hover {
+#view-full:hover, #view-responsive:hover {
   background: #363a22
 }
+
+.rwd-display-option{ cursor: pointer; }
+
+#view-responsive{ display: none; }
 
 footer {
   width: 100%;
@@ -221,6 +226,10 @@ a.social:hover {
 
 /* Styles for larger screens */
 @media (min-width:900px) {
+
+  #view-full{ display: none; }
+  #view-responsive{ display: flex; }
+
   section {
       display: -ms-flexbox;
       display: flex;
@@ -251,20 +260,6 @@ a.social:hover {
   }
 }
 
-/*@media screen and (min-width: 720px) {
-  .card {
-    max-width: 40%;
-    margin: 15px auto;
-    float: left;
-  }
-  .card:nth-of-type(2){
-    border: 1px solid blue;
-    width: 60%;
-    float: left;
-  }
-
-}*/
-
 @media screen and (max-width: 899px) {
   .card {
     max-width: 70%;
@@ -280,15 +275,4 @@ a.social:hover {
     max-width: 90%;
     margin: 15px auto;
   }
-}
-
-/* CSS for View Full Site */
-.rwd-display-options{ text-align: center; }
-.rwd-display-option{ cursor: pointer; }
-
-#view-responsive{ display: none; }
-
-@media only screen and (min-width: 900px){
-    #view-full{ display: none; }
-    #view-responsive{ display: inline; }
 }

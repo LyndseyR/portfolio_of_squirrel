@@ -1,7 +1,3 @@
-$('#view-full').click(function(){
-  console.log('Clicked Test');
-});
-
 (function() {
     // viewport stuff
     var targetWidth = 980;
@@ -16,7 +12,7 @@ $('#view-full').click(function(){
         viewport.attr('content', 'width=' + targetWidth);
 
         if(!$('.rwd-display-options #view-responsive').length){
-            $('.rwd-display-options').append('<span id="view-responsive">View Mobile Optimized</span>');
+            $('.rwd-display-options').append('<span id="view-responsive">View Mobile Site</span>');
         }
 
         localStorage.isResponsive = 'false';
