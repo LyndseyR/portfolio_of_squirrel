@@ -420,6 +420,19 @@ template {
   .card:hover, .card__header--treepg:hover, .card:focus, .card__header--treepg:focus {
     border-color: #363a22; }
 
+#view-full {
+  background: #835c38;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  transition: background .5s; }
+  #view-full:hover, #view-full:focus {
+    background: #363a22; }
+
 /* Global Layout Set-up */
 * {
   box-sizing: border-box; }
@@ -495,7 +508,7 @@ nav {
     .hero__tag--callout {
       background-color: #363a22;
       color: #f7f5f0; }
-      @media (max-width: 899px) {
+      @media (min-width: 900px) {
         .hero__tag--callout {
           margin-bottom: 15px; } }
 
@@ -552,35 +565,30 @@ nav {
     font-size: 0.9em;
     color: #363a22; }
 
-/* CSS for View Full Site */
-#view-full, #view-responsive {
-  background: #835c38;
-  height: 50px;
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  color: #fff;
-  transition: background .5s; }
-
-#view-full:hover, #view-responsive:hover {
-  background: #363a22; }
+#view-full {
+  display: flex; }
+  @media (min-width: 900px) {
+    #view-full {
+      display: none; } }
 
 .rwd-display-option {
   cursor: pointer; }
 
 #view-responsive {
   display: none; }
+  @media (min-width: 900px) {
+    #view-responsive {
+      display: flex;
+      background: #835c38;
+      height: 50px;
+      width: 200px;
+      margin: 0 auto;
+      justify-content: center;
+      align-items: center;
+      border-radius: 4px;
+      color: #fff;
+      transition: background .5s; } }
 
-@media (min-width: 900px) {
-  #view-full {
-    display: none; }
-
-  #view-responsive {
-    display: inline; } }
 footer {
   width: 100%;
   min-height: 30px;

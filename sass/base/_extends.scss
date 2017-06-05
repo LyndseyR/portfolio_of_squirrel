@@ -20,3 +20,20 @@
     border-color: $color-primary;
   }
 }
+
+//View in desktop while on mobile
+%view {
+  background: #835c38;
+  height: 50px;
+  width: 200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  transition: background .5s;
+
+  &:hover, &:focus {
+    background: #363a22
+  }
+}

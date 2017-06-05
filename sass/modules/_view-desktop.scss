@@ -1,26 +1,25 @@
-/* CSS for View Full Site */
-#view-full, #view-responsive {
-  background: #835c38;
-  height: 50px;
-  width: 200px;
-  display: block;
-  margin: 0 auto;
+#view-full {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4px;
-  color: #fff;
-  transition: background .5s;
-}
-#view-full:hover, #view-responsive:hover {
-  background: #363a22
+  @extend %view;
+
+  @media #{$breakpoint-large}{
+    display: none;
+  }
 }
 
 .rwd-display-option{ cursor: pointer; }
 
-#view-responsive{ display: none; }
-
-@media #{$breakpoint-large}{
-    #view-full{ display: none; }
-    #view-responsive{ display: inline; }
+#view-responsive{ display: none;
+  @media #{$breakpoint-large}{
+    display: flex;
+    background: #835c38;
+    height: 50px;
+    width: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    color: #fff;
+    transition: background .5s;
+  }
 }
