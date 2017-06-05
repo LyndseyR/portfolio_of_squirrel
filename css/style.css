@@ -575,6 +575,12 @@ nav {
 #view-responsive {
   display: none; }
 
+@media (min-width: 900px) {
+  #view-full {
+    display: none; }
+
+  #view-responsive {
+    display: inline; } }
 footer {
   width: 100%;
   min-height: 30px;

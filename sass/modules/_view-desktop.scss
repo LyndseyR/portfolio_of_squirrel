@@ -19,3 +19,8 @@
 .rwd-display-option{ cursor: pointer; }
 
 #view-responsive{ display: none; }
+
+@media #{$breakpoint-large}{
+    #view-full{ display: none; }
+    #view-responsive{ display: inline; }
+}
