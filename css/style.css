@@ -553,7 +553,7 @@ nav {
     color: #363a22; }
 
 /* CSS for View Full Site */
-#view-full {
+#view-full, #view-responsive {
   background: #835c38;
   height: 50px;
   width: 200px;
@@ -566,10 +566,10 @@ nav {
   color: #fff;
   transition: background .5s; }
 
-#view-full:hover {
+#view-full:hover, #view-responsive:hover {
   background: #363a22; }
 
-.display__options--option {
+.rwd-display-option {
   cursor: pointer; }
 
 #view-responsive {
