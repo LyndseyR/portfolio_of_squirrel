@@ -12,7 +12,7 @@
         viewport.attr('content', 'width=' + targetWidth);
 
         if(!$('.rwd-display-options #view-responsive').length){
-            $('.rwd-display-options').append('<span id="view-responsive">View Mobile Site</span>');
+            $('.rwd-display-options').append('<span id="view-responsive">View Mobile Optimized</span>');
         }
 
         localStorage.isResponsive = 'false';
