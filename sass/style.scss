@@ -1,0 +1,81 @@
+//Vendors/////////////
+@import "vendors/normalize";
+
+
+//Base/////////////
+@import "base/variables";
+@import "base/mixins";
+@import "base/extends";
+@import "base/global";
+
+
+
+//Modules//////////
+@import "modules/nav";
+@import "modules/hero";
+@import "modules/card";
+@import "modules/gallery";
+@import "modules/view-desktop";
+
+
+//Layouts/////////////
+@import "layouts/footer";
+
+// Trumps/////////////
+@import "trumps/trumps";
+
+
+
+
+/* Styles for larger screens */
+@media (min-width:900px) {
+
+  #view-full{ display: none; }
+  #view-responsive{ display: flex; }
+
+  section {
+      display: -ms-flexbox;
+      display: flex;
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  // .nav {
+  //   max-width: 1200px;
+  //   padding: 0 30px;
+  // }
+
+
+  main {
+    padding-top: 20px;
+  }
+
+  main p {
+    line-height: 1.6em;
+  }
+
+  footer {
+    font-size: 1.3em;
+    max-width: 1200px;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .card {
+    max-width: 70%;
+    margin: 15px auto;
+  }
+  .call-out {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 450px){
+  .card {
+    max-width: 90%;
+    margin: 15px auto;
+  }
+}

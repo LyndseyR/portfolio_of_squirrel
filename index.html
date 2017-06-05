@@ -3,66 +3,64 @@
 <head>
   <meta charset="utf-8">
   <title>Life of a Squirrel</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/modernizr.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
+</head>
 
   <body>
 
     <header>
-      <div class="main-nav">
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="trees.html">Trees</a></li>
+      <nav>
+          <ul class="nav__list">
+            <li class="nav__list__item"><a href="index.html">Home</a></li>
+            <li class="nav__list__item"><a href="trees.html">Trees</a></li>
           </ul>
-      </div>
+      </nav>
     </header>
     <div class="hero">
-      <img src="images/squirrel-port-img.jpg" alt="Photograph of a Squirrel" class="profile-image">
-      <h1 class="tag">Hello, I’m Lyndsey</h1>
-      <p class="tag call-out">My home is the forest</p>
+      <img src="images/squirrel-port-img.jpg" alt="Photograph of a Squirrel" class="hero__image">
+      <h1 class="hero__tag">Hello, I’m Lyndsey</h1>
+      <p class="hero__tag--callout">My home is the forest</p>
     </div>
 
     <section class="clearfix">
       <div class="card">
-        <h2>Background</h2>
-        <p>I've lived my whole life in the same forest. It rains more days then not, but I like that. Rain and fog make it easier for me to blend in. I pretty much love everything except for birds. </p>
+        <h2 class="card__title">Background</h2>
+        <p class="card__desc">I've lived my whole life in the same forest. It rains more days then not, but I like that. Rain and fog make it easier for me to blend in. I pretty much love everything except for birds. </p>
       </div>
 
       <div class="card">
-        <h2>Skills</h2>
-      	<p>I am a professional bird-feed eater. Sunflower seeds are my favorite.</p>
-        <h2>Bucket List</h2>
-        <p>The following is my list of must go to trees:</p>
+        <h2 class="card__title">Skills</h2>
+      	<p class="card__desc">I am a professional bird-feed eater. Sunflower seeds are my favorite.</p>
+        <h2 class="card__title">Bucket List</h2>
+        <p class="card__desc">The following is my list of must go to trees:</p>
         <ul>
-          <li>Maple</li>
-          <li>Redwoods</li>
-          <li>White Oak</li>
-          <li>Hawthorn</li>
-          <li>Sequoia</li>
-          <li>Pecan</li>
+          <li class="card__btn">Maple</li>
+          <li class="card__btn">Redwoods</li>
+          <li class="card__btn">White Oak</li>
+          <li class="card__btn">Hawthorn</li>
+          <li class="card__btn">Sequoia</li>
+          <li class="card__btn">Pecan</li>
         </ul>
       </div>
 
       <div class="card">
-        <h2>Goals</h2>
-        <p>I need an adventure. So far I've only lived in two trees. It's a comfy place, but I feel like I'm settling. I'm going to start traveling. I've been doing research and have a list of 4 trees I plan to live in. All I need is to save up enough nuts before I can go.</p>
-        <p>My plan is to live in each tree for a year. During that year I'll be able to gather enough food to travel to the next place.</p>
+        <h2 class="card__title">Goals</h2>
+        <p class="card__desc">I need an adventure. So far I've only lived in two trees. It's a comfy place, but I feel like I'm settling. I'm going to start traveling. I've been doing research and have a list of 4 trees I plan to live in. All I need is to save up enough nuts before I can go.</p>
+        <p class="card__desc">My plan is to live in each tree for a year. During that year I'll be able to gather enough food to travel to the next place.</p>
       </div>
 
     </section>
 
     <!-- "View Full Site" Button -->
-    <div class="rwd-display-options">
-        <span id="view-full" class="rwd-display-option">View Full Site</span>
+    <div class="display__options">
+      <span id="view-full" class="display__options--option">View Full Site</span>
     </div>
 
     <footer>
-      <ul>
-        <li><a href="https://github.com/LyndseyR" class="social github">Github</a></li>
-      </ul>
-      <p class="copyright">Copyright 2016, Lyndsey Roka</p>
+      <div><a href="https://github.com/LyndseyR" class="github">Github</a></div>
+      <p class="footer__copyright">Copyright 2016, Lyndsey Roka</p>
     </footer>
 
 

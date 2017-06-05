@@ -1,0 +1,31 @@
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  margin: 0;
+  padding: 20px 20px;
+}
+
+.footer__copyright{
+  top: -8px;
+  font-size: .75em;
+  color: $color-text-lighten;
+}
+
+.github {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .4;
+  transition: all .5s;
+}
+
+.github {
+  background-image: url('#{$img-path}github.svg');
+}
+.github:hover {
+  opacity: 1;
+}

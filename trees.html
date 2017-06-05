@@ -4,52 +4,47 @@
   <meta charset="utf-8">
   <title>Life of a Squirrel</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"></head>
-  <body>
+  <link rel="stylesheet" href="css/style.css">
 
+  <body>
     <header>
-      <div class="main-nav">
-          <ul class="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="trees.html">Trees</a></li>
+      <nav>
+          <ul class="nav__list">
+            <li class="nav__list__item"><a href="index.html">Home</a></li>
+            <li class="nav__list__item"><a href="trees.html">Trees</a></li>
           </ul>
-      </div>
+      </nav>
     </header>
 
     <main>
-      <div class="card card-header">
+      <div class="card__header--treepg">
         <h2>Trees</h2>
         <p>All these trees are so beautiful. I hope they're as comfy as they look. </p>
       </div>
       <section>
-	      <ul id ="gallery">
-		      <li>
-		        <img src="images/maple.jpg" alt="Maple Tree in Fall">
-			    <p class="description">Maple Tree</p>
-		      </li>
-		      <li>
-		      	<img src="images/redwood.jpg" alt="Redwoods">
-			    <p class="description">The Redwoods</p>
-		      </li>
-		      <li>
-		      	<img src="images/WhiteOak.jpg" alt="White Oak">
-			    <p class="description">White Oak Tree</p>
-		      </li>
-		      <li>
-		      	<img src="images/hawthorn-tree.jpg" alt="Hawthorn Tree">
-			    <p class="description">Hawthorn Tree</p>
-		      </li>
-	      </ul>
+	      <div class="gallery">
+		      <div class="gallery__item">
+		        <img class="gallery__item__img" src="images/maple.jpg" alt="Maple Tree in Fall">
+			      <p class="gallery__item__caption">Maple Tree</p>
+		      </div>
+		      <div class="gallery__item">
+		      	<img class="gallery__item__img" src="images/redwood.jpg" alt="Redwoods">
+			      <p class="gallery__item__caption">The Redwoods</p>
+		      </div>
+		      <div class="gallery__item">
+		      	<img class="gallery__item__img" src="images/WhiteOak.jpg" alt="White Oak">
+			      <p class="gallery__item__caption">White Oak Tree</p>
+		      </div>
+		      <div class="gallery__item">
+		      	<img class="gallery__item__img" src="images/hawthorn-tree.jpg" alt="Hawthorn Tree">
+			      <p class="gallery__item__caption">Hawthorn Tree</p>
+		      </div>
+	      </div>
       </section>
     </main>
     <footer>
-      <!--<ul>
-        <li><a href="#" class="social twitter">Twitter</a></li>
-        <li><a href="#" class="social linkedin">LinkedIn</a></li>
-        <li><a href="#" class="social github">Github</a></li>
-      </ul>-->
-      <p class="copyright">Copyright 2016, Lyndsey Roka</p>
+      <div><a href="https://github.com/LyndseyR" class="github">Github</a></div>
+      <p class="footer__copyright">Copyright 2016, Lyndsey Roka</p>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

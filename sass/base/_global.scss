@@ -1,0 +1,33 @@
+//Import Roboto font
+
+@if variable-exists(font-google-sans) {
+  @import url($font-google-sans);
+}
+
+/* Global Layout Set-up */
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, a, ul, ol p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+  background: #f7f5f0;
+}
+
+img{
+	max-width: 100%
+}
+
+main {
+  margin-top: 50px;
+}

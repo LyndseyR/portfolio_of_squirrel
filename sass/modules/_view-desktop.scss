@@ -1,0 +1,21 @@
+/* CSS for View Full Site */
+#view-full {
+  background: #835c38;
+  height: 50px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: #fff;
+  transition: background .5s;
+}
+#view-full:hover{
+  background: $color-primary
+}
+
+.display__options--option{ cursor: pointer; }
+
+#view-responsive{ display: none; }

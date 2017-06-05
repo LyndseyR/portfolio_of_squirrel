@@ -1,0 +1,26 @@
+.gallery {
+	margin: 0;
+	padding: 0;
+	list-style:none;
+  z-index: 0;
+}
+
+.gallery__item{
+	float: left;
+	width: 45%;
+	margin:2.5%;
+
+  &__img {
+    border: 1px solid $color-primary;
+    transition: all 1s;
+    &:hover {
+        transform: rotate(5deg);
+    }
+  }
+
+  &__caption {
+    margin: 0;
+    font-size:0.9em;
+    color: $color-primary;
+  }
+}

@@ -1,0 +1,26 @@
+.card {
+  @extend %card;
+  max-width: 400px;
+  text-align: left;
+}
+
+.card__btn{
+  border-radius: 6px;
+  display: inline-block;
+  background: $color-primary;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+
+  &:nth-child(odd){
+    background: #835c38;
+  }
+}
+
+
+.card__header--treepg {
+  @extend %card;
+  max-width: 80%;
+  text-align: center;
+  margin: 15px auto;
+}
