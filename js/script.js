@@ -1,3 +1,6 @@
+$('#view-full').click(function(){
+   console.log('Clicked Test');
+ });
 (function() {
     // viewport stuff
     var targetWidth = 980;
