@@ -16,7 +16,7 @@
   border-radius: $br-radius;
   transition: all .5s;
 
-  &:hover {
+  &:hover, &:focus{
     border-color: $color-primary;
   }
 }

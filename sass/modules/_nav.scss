@@ -28,7 +28,7 @@ nav {
   }
 }
 
-.nav__list__item a:hover {
+.nav__list__item a:hover, .nav__list__item a:focus {
   color: $color-primary;
   background: white;
 }

@@ -3,6 +3,10 @@
   max-width: 400px;
   text-align: left;
 
+  ul {
+   text-align: center;
+  }
+
   @media #{$breakpoint-tablet} {
     width: 70%;
     display: block;
