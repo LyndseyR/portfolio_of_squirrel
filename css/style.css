@@ -405,7 +405,7 @@ template {
 
 .hero__tag, .hero__tag--callout {
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 2px;
   width: 50%;
   margin: 0px auto; }
 
@@ -415,7 +415,7 @@ template {
   background: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-bottom: 4px solid #ccc;
-  border-radius: 6px;
+  border-radius: 5px;
   transition: all .5s; }
   .card:hover, .card__header--treepg:hover {
     border-color: #363a22; }
@@ -445,30 +445,28 @@ main {
 
 /* Navigation */
 nav {
-  width: 100%;
-  background: #363a22;
-  min-height: 50px;
-  padding: 10px;
-  position: fixed;
-  top: 0;
-  z-index: 100; }
-
-.nav__list {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  background: #363a22;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  overflow: hidden; }
+
+.nav__list {
   font-weight: 500;
-  list-style-type: none;
-  margin: 0 auto;
-  padding: 0;
-  border-bottom: 1px solid transparent; }
+  list-style-type: none; }
   .nav__list__item {
     display: inline-block; }
     .nav__list__item a {
-      padding: 5px 10px 10px;
+      padding: 25px 15px;
       transition: all .5s;
       text-decoration: none;
-      color: #fff; }
+      color: #fff;
+      margin-right: 5px; }
 
 .nav__list__item a:hover {
   color: #363a22;
@@ -476,32 +474,46 @@ nav {
 
 .hero {
   background: url("../images/forest-bkgrd.jpg") no-repeat top center;
-  background-size: cover;
   height: 500px;
+  background-size: cover;
+  object-fit: cover;
   margin-top: 50px; }
   .hero__image {
-    margin: 30px 0px 20px;
     width: 120px;
     height: 150px;
+    background-size: cover;
     object-fit: cover;
-    border-radius: 4px;
+    margin: 30px 0px 20px;
+    border-radius: 5px;
     border: 1px solid #363a22;
     transition: all .5s; }
     .hero__image:hover {
       transform: scale(1.2) rotate(5deg); }
   .hero__tag {
-    background-color: #f3f3f3;
+    background-color: #f7f5f0;
     color: #363a22; }
     .hero__tag--callout {
       background-color: #363a22;
-      color: #f3f3f3; }
+      color: #f7f5f0; }
+      @media (max-width: 899px) {
+        .hero__tag--callout {
+          margin-bottom: 15px; } }
 
 .card {
   max-width: 400px;
   text-align: left; }
+  @media (max-width: 899px) {
+    .card {
+      width: 70%;
+      display: block;
+      margin: 10px auto; } }
+  @media (max-width: 450px) {
+    .card {
+      max-width: 90%;
+      margin: 15px auto; } }
 
 .card__btn {
-  border-radius: 6px;
+  border-radius: 5px;
   display: inline-block;
   background: #363a22;
   color: white;
@@ -516,8 +528,6 @@ nav {
   margin: 15px auto; }
 
 .gallery {
-  margin: 0;
-  padding: 0;
   list-style: none;
   z-index: 0; }
 
@@ -526,8 +536,13 @@ nav {
   width: 45%;
   margin: 2.5%; }
   .gallery__item__img {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    object-fit: cover;
     border: 1px solid #363a22;
-    transition: all 1s; }
+    transition: all 1s;
+    border-radius: 5px; }
     .gallery__item__img:hover {
       transform: rotate(5deg); }
   .gallery__item__caption {
@@ -585,47 +600,26 @@ footer {
 .github:hover {
   opacity: 1; }
 
+section {
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 auto; }
+  @media (max-width: 899px) {
+    section {
+      flex-direction: column; } }
+
+main {
+  padding-top: 20px; }
+
+main p {
+  line-height: 1.6em; }
+
 .clearfix::after {
   content: "";
   display: block;
   clear: both; }
-
-/* Styles for larger screens */
-@media (min-width: 900px) {
-  #view-full {
-    display: none; }
-
-  #view-responsive {
-    display: flex; }
-
-  section {
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 1200px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin: 0 auto; }
-
-  main {
-    padding-top: 20px; }
-
-  main p {
-    line-height: 1.6em; }
-
-  footer {
-    font-size: 1.3em;
-    max-width: 1200px;
-    margin: 0px auto; } }
-@media screen and (max-width: 899px) {
-  .card {
-    max-width: 70%;
-    margin: 15px auto; }
-
-  .call-out {
-    margin-bottom: 15px; } }
-@media (max-width: 450px) {
-  .card {
-    max-width: 90%;
-    margin: 15px auto; } }
 
 /*# sourceMappingURL=style.css.map */

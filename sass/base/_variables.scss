@@ -1,8 +1,15 @@
 $img-path: '../images/';
 $font-google-sans: 'https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900';
+$br-radius: 5px; 
 
 // Colors
-$color-primary:#363a22;
+$color-primary:#363a22; //green
+$color-secondary:#835c38; //brown
+$color-background: #f7f5f0; //off white
 
 $color-text: #333;
 $color-text-lighten: lighten($color-text, 50%);
+
+//Media query Breakpoints
+$breakpoint-tablet: '(max-width: 899px)';
+$breakpoint-mobile: '(max-width: 450px)';

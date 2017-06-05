@@ -1,6 +1,4 @@
 .gallery {
-	margin: 0;
-	padding: 0;
 	list-style:none;
   z-index: 0;
 }
@@ -11,8 +9,10 @@
 	margin:2.5%;
 
   &__img {
+		@include image (100%, 250px, $fit: cover);
     border: 1px solid $color-primary;
     transition: all 1s;
+		border-radius: $br-radius;
     &:hover {
         transform: rotate(5deg);
     }

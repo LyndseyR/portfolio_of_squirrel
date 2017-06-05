@@ -2,10 +2,21 @@
   @extend %card;
   max-width: 400px;
   text-align: left;
+
+  @media #{$breakpoint-tablet} {
+    width: 70%;
+    display: block;
+    margin: 10px auto;
+  }
+
+  @media #{$breakpoint-mobile} {
+    max-width: 90%;
+    margin: 15px auto;
+  }
 }
 
 .card__btn{
-  border-radius: 6px;
+  border-radius: $br-radius;
   display: inline-block;
   background: $color-primary;
   color: white;
@@ -13,10 +24,9 @@
   margin: 2px;
 
   &:nth-child(odd){
-    background: #835c38;
+    background: $color-secondary;
   }
 }
-
 
 .card__header--treepg {
   @extend %card;

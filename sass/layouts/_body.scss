@@ -1,0 +1,20 @@
+section {
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+
+    @media #{$breakpoint-tablet} {
+      flex-direction: column;
+    }
+}
+
+main {
+  padding-top: 20px;
+}
+
+main p {
+  line-height: 1.6em;
+}

@@ -1,0 +1,12 @@
+@mixin image ($width: null, $height: null, $fit:cover) {
+  width: $width;
+  height: $height;
+  background-size: $fit;
+  object-fit: $fit;
+}
+
+@mixin flex ($display:flex, $justify:center, $align: center){
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
