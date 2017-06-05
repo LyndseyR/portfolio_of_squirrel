@@ -11,8 +11,8 @@
         localStorage.responsiveViewportValue = viewport.attr('content');
         viewport.attr('content', 'width=' + targetWidth);
 
-        if(!$('.display__options #view-responsive').length){
-            $('.display__options').append('<span id="view-responsive">View Mobile Site</span>');
+        if(!$('.rwd-display-options #view-responsive').length){
+            $('.rwd-display-options').append('<span id="view-responsive">View Mobile Site</span>');
         }
 
         localStorage.isResponsive = 'false';
@@ -34,7 +34,7 @@
         showFullSite();
     });
 
-    $('.display__options').on("click", "#view-responsive", function(){
+    $('.rwd-display-options').on("click", "#view-responsive", function(){
         showMobileOptimized();
     });
 })(jQuery);
