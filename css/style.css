@@ -508,9 +508,6 @@ nav {
     .hero__tag--callout {
       background-color: #363a22;
       color: #f7f5f0; }
-      @media (min-width: 900px) {
-        .hero__tag--callout {
-          margin-bottom: 15px; } }
 
 .card {
   max-width: 400px;
@@ -567,7 +564,7 @@ nav {
 
 #view-full {
   display: flex; }
-  @media (min-width: 900px) {
+  @media (max-width: 450px) {
     #view-full {
       display: none; } }
 
@@ -576,7 +573,7 @@ nav {
 
 #view-responsive {
   display: none; }
-  @media (min-width: 900px) {
+  @media (max-width: 450px) {
     #view-responsive {
       display: flex;
       background: #835c38;

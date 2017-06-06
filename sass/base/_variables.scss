@@ -11,6 +11,6 @@ $color-text: #333;
 $color-text-lighten: lighten($color-text, 50%);
 
 //Media query Breakpoints
-$breakpoint-large: '(min-width: 900px)';
+// $breakpoint-large: '(min-width: 900px)';
 $breakpoint-tablet: '(max-width: 899px)';
 $breakpoint-mobile: '(max-width: 450px)';

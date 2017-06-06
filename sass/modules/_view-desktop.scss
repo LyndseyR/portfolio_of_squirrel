@@ -2,7 +2,7 @@
   display: flex;
   @extend %view;
 
-  @media #{$breakpoint-large}{
+  @media #{$breakpoint-mobile}{
     display: none;
   }
 }
@@ -10,7 +10,7 @@
 .rwd-display-option{ cursor: pointer; }
 
 #view-responsive{ display: none;
-  @media #{$breakpoint-large}{
+  @media #{$breakpoint-mobile}{
     display: flex;
     background: #835c38;
     height: 50px;
