@@ -1,6 +1,6 @@
 (function() {
     // viewport stuff
-    var targetWidth = 450;
+    var targetWidth = 900;
     var deviceWidth = 'device-width';
     var viewport = $('meta[name="viewport"]');
 
