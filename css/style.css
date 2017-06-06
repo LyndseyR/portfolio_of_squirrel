@@ -514,15 +514,6 @@ nav {
   text-align: left; }
   .card ul {
     text-align: center; }
-  @media (max-width: 899px) {
-    .card {
-      width: 70%;
-      display: block;
-      margin: 10px auto; } }
-  @media (max-width: 450px) {
-    .card {
-      max-width: 90%;
-      margin: 15px auto; } }
 
 .card__btn {
   border-radius: 5px;
@@ -620,7 +611,7 @@ section {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   margin: 0 auto; }
-  @media (max-width: 899px) {
+  @media (max-width: 900px) {
     section {
       flex-direction: column; } }
 
@@ -634,5 +625,26 @@ main p {
   content: "";
   display: block;
   clear: both; }
+
+@media (max-width: 900px) {
+  .card {
+    max-width: 70%;
+    margin: 10px auto; } }
+@media (max-width: 450px) {
+  .hero {
+    height: 400px;
+    margin-bottom: 15px; }
+    .hero__tag {
+      width: 80%; }
+      .hero__tag--callout {
+        width: 80%; }
+
+  .card {
+    padding: 20px 15px;
+    max-width: 90%;
+    margin: 10px auto; }
+
+  .card__header--treepg {
+    padding: 20px 15px; } }
 
 /*# sourceMappingURL=style.css.map */

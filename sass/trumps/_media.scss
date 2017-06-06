@@ -1,0 +1,28 @@
+@media (max-width: 900px) {
+  .card {
+    max-width: 70%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero {
+    height: 400px;
+    margin-bottom: 15px;
+    &__tag {
+      width: 80%;
+      &--callout {
+        width: 80%;
+      }
+    }
+  }
+
+  .card {
+    padding: 20px 15px;
+    max-width: 90%;
+    margin: 10px auto;
+  }
+  .card__header--treepg {
+    padding: 20px 15px;
+  }
+}
